@@ -1,0 +1,18 @@
+import estadios.*
+
+test "Bombonera"{
+
+	bombonera.alquiler(10000000)
+	assert.equals(10000000, bombonera.alquiler())
+
+}
+
+test "Monumental"{
+	assert.equals(42000, monumental.capacidad())
+	monumental.avanceDeObras()
+	monumental.avanceDeObras()
+	monumental.avanceDeObras()
+	monumental.avanceDeObras()
+	monumental.avanceDeObras()
+	assert.equals(70000, monumental.capacidad())
+}

@@ -1,0 +1,11 @@
+import evento.*
+import jugadores.*
+import estadios.*
+
+test "Evento" {
+
+	assert.equals(485560000, evento.gananciaNeta(bombonera, messi))
+	evento.realizarPartido(bombonera, messi)
+	assert.equals(885560000, evento.arcas())
+
+}

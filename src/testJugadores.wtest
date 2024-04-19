@@ -1,0 +1,25 @@
+import jugadores.*
+
+test "Messi"{
+
+	messi.pasaronCosas()
+	assert.equals(0.93, messi.popularidad())
+
+}
+
+test "Ronaldo"{
+	ronaldo.pasaronCosas()
+	messi.pasaronCosas()
+	assert.equals(0.465, ronaldo.popularidad())
+}
+
+test "Mbappe"{
+	assert.equals(0.54, mbappe.popularidad())
+	mbappe.pasaronCosas()
+	assert.equals(0.56, mbappe.popularidad())
+}
+
+test "Palermo"{
+	palermo.pasaronCosas()
+	assert.equals(10500000, palermo.viaticos())
+}
